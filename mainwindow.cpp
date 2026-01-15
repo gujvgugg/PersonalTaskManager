@@ -443,7 +443,7 @@ void MainWindow::exportReport()
         }
         html += "</tr></thead>";
 
-        // Data
+
         html += "<tbody>";
         for (int i = 0; i < m_model->rowCount(); ++i) {
             html += "<tr>";
