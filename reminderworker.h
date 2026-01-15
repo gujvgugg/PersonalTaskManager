@@ -16,7 +16,7 @@ public:
 public slots:
     void startWork();
     void stopWork();
-    void checkReminders();
+    void checkReminders();//11
 
 signals:
     void reminderTriggered(const QString &title, const QString &deadline);

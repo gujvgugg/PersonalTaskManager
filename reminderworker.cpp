@@ -43,7 +43,7 @@ void ReminderWorker::checkReminders()
 
         if (db.open()) {
             QSqlQuery query(db);
-            // Find incomplete tasks where deadline <= now
+
             QString nowStr = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm");
             
             

@@ -69,7 +69,7 @@ bool DataManager::createTables()
 
 
 
-    // SQLite supports CASCADE DELETE if PRAGMA foreign_keys = ON; is set.
+
 
     success = query.exec("CREATE TABLE IF NOT EXISTS tasks ("
                          "id INTEGER PRIMARY KEY AUTOINCREMENT, "

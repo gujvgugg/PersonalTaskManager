@@ -18,7 +18,7 @@ public:
     void closeDatabase();
     bool createTables();
     
-    // Category CRUD
+
     bool addCategory(const QString &name);
     bool deleteCategory(int id);
     QStringList getAllCategories();

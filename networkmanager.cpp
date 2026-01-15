@@ -20,7 +20,7 @@ void NetworkManager::onReplyFinished(QNetworkReply *reply)
 {
     if (reply->error() == QNetworkReply::NoError) {
         QString response = reply->readAll();
-        // Just extract some info to prove it works
+
         if (response.contains("userId")) {
              emit connectionStatus(tr("网络连接正常: 已连接到云端服务器"));
         } else {

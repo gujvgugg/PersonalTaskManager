@@ -16,7 +16,7 @@ CategoryDialog::CategoryDialog(QWidget *parent) :
     m_model->setHeaderData(1, Qt::Horizontal, tr("分类名称"));
     m_model->select();
 
-    ui->tableView->setModel(m_model);
+    ui->tableView->setModel(m_model);//11
     ui->tableView->hideColumn(0);
     ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);

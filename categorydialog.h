@@ -8,7 +8,7 @@ namespace Ui {
 class CategoryDialog;
 }
 
-class CategoryDialog : public QDialog
+class CategoryDialog : public QDialog//111
 {
     Q_OBJECT
 

@@ -9,7 +9,7 @@ TaskDialog::TaskDialog(QWidget *parent) :
     ui->setupUi(this);
 
     // Set UserData for Priority ComboBox items defined in .ui
-    // 0: Low, 1: Medium, 2: High
+
     ui->priorityCombo->setItemData(0, 0);
     ui->priorityCombo->setItemData(1, 1);
     ui->priorityCombo->setItemData(2, 2);

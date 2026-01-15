@@ -31,7 +31,7 @@ private slots:
     void manageCategories(); // New
     void exportReport();
     void onFilterChanged();
-    void onReminderTriggered(const QString &title, const QString &deadline); // New
+    void onReminderTriggered(const QString &title, const QString &deadline);
     void onNetworkStatus(const QString &status);
     void checkCloudSync(); // New
 

@@ -17,7 +17,7 @@ signals:
     void connectionStatus(const QString &status);
 
 private slots:
-    void onReplyFinished(QNetworkReply *reply);
+    void onReplyFinished(QNetworkReply *reply);//111
 
 private:
     QNetworkAccessManager *m_manager;

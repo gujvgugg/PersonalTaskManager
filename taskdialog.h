@@ -21,7 +21,7 @@ public:
     void setPriority(int priority);
     void setDeadline(const QDateTime &dateTime);
     void setDetail(const QString &detail);
-    void setCategory(int categoryId); // New
+    void setCategory(int categoryId);
     void populateCategories(const QMap<int, QString> &categories); // New
 
     // Getters to retrieve data
