@@ -400,7 +400,7 @@ void MainWindow::exportReport()
 
         file.close();
     } else {
-        // Export to PDF
+
         QPrinter printer(QPrinter::HighResolution);
         printer.setOutputFormat(QPrinter::PdfFormat);
         printer.setOutputFileName(fileName);
