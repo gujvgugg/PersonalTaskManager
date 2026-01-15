@@ -68,8 +68,7 @@ bool DataManager::createTables()
     }
 
 
-    // Note: SQLite FK support must be enabled, but for simple app we handle logic carefully.
-    // However, user requested "Foreign Key" and "Cascade Delete".
+
     // SQLite supports CASCADE DELETE if PRAGMA foreign_keys = ON; is set.
 
     success = query.exec("CREATE TABLE IF NOT EXISTS tasks ("
