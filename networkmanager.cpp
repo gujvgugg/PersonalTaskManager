@@ -9,7 +9,7 @@ NetworkManager::NetworkManager(QObject *parent) : QObject(parent)
 
 void NetworkManager::checkConnection()
 {
-    // Use a reliable public API for testing connectivity
+
     // jsonplaceholder is a good free fake API
     QUrl url("https://jsonplaceholder.typicode.com/todos/1");
     QNetworkRequest request(url);
