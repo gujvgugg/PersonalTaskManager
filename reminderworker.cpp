@@ -46,12 +46,6 @@ void ReminderWorker::checkReminders()
             // Find incomplete tasks where deadline <= now
             QString nowStr = QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm");
             
-            // Note: String comparison for dates works if format is YYYY-MM-DD HH:mm
-            // We should ideally query tasks that are NOT done and deadline matches exactly current minute
-            // OR deadline passed recently. 
-            // For simplicity, let's just query tasks with deadline <= now and done = 0
-            // But to avoid spamming, we might need a "reminded" flag or just rely on minute precision.
-            // Let's assume we alert if deadline is exactly this minute or passed within last minute.
             
             query.prepare("SELECT title, deadline FROM tasks WHERE done = 0 AND deadline <= :now AND deadline > :past");
             query.bindValue(":now", nowStr);
