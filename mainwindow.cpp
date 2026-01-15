@@ -383,7 +383,7 @@ void MainWindow::exportReport()
         }
         out << headers.join(",") << "\n";
 
-        // Export all data
+
         for (int i = 0; i < m_model->rowCount(); ++i) {
             QStringList rowData;
             for (int j = 0; j < m_model->columnCount(); ++j) {
