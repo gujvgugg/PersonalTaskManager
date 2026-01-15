@@ -434,7 +434,7 @@ void MainWindow::exportReport()
         html += "<h3>" + tr("任务列表") + "</h3>";
         html += "<table border='1' cellspacing='0' cellpadding='4' width='100%'>";
 
-        // Headers
+
         html += "<thead><tr>";
         for (int i = 0; i < m_model->columnCount(); ++i) {
             // Skip ID column (0)
