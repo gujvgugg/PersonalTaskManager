@@ -67,7 +67,7 @@ bool DataManager::createTables()
         query.exec("INSERT INTO categories (name) VALUES ('生活')");
     }
 
-    // Create Tasks Table with Foreign Key
+
     // Note: SQLite FK support must be enabled, but for simple app we handle logic carefully.
     // However, user requested "Foreign Key" and "Cascade Delete".
     // SQLite supports CASCADE DELETE if PRAGMA foreign_keys = ON; is set.
