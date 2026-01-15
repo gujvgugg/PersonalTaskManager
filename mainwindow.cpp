@@ -353,7 +353,7 @@ void MainWindow::exportReport()
         }
 
         QTextStream out(&file);
-        // Write BOM for Excel UTF-8 compatibility
+
         out << "\xEF\xBB\xBF";
 
         // Statistics
