@@ -410,7 +410,7 @@ void MainWindow::exportReport()
         html += "<h1>" + tr("任务管理统计报表") + "</h1>";
         html += "<p>" + tr("生成时间: ") + QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss") + "</p>";
 
-        // Statistics
+
         int total = m_model->rowCount();
         int completed = 0;
         int pending = 0;
