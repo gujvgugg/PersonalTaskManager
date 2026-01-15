@@ -17,7 +17,7 @@ void ReminderWorker::startWork()
     connect(m_timer, &QTimer::timeout, this, &ReminderWorker::checkReminders);
     m_timer->start(60000); // Check every minute
     
-    // Initial check
+
     checkReminders();
 }
 

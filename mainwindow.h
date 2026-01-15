@@ -29,7 +29,7 @@ private slots:
     void editTask();
     void deleteTask();
     void manageCategories(); // New
-    void exportReport(); // Renamed
+    void exportReport();
     void onFilterChanged();
     void onReminderTriggered(const QString &title, const QString &deadline); // New
     void onNetworkStatus(const QString &status);
