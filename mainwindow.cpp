@@ -454,7 +454,7 @@ void MainWindow::exportReport()
                 // Special formatting
                 if (j == 2) { // Priority
                     if (data == "0") data = tr("低");
-                    else if (data == "1") data = tr("中");//11
+                    else if (data == "1") data = tr("中");
                     else if (data == "2") data = tr("高");
                 } else if (j == 3) { // Done
                     data = (data == "1") ? tr("是") : tr("否");

@@ -87,7 +87,7 @@ bool DataManager::createTables()
         return false;
     }
 
-    // Enable Foreign Keys
+
     query.exec("PRAGMA foreign_keys = ON");
 
     return true;
