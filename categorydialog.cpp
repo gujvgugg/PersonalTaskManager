@@ -17,7 +17,7 @@ CategoryDialog::CategoryDialog(QWidget *parent) :
     m_model->select();
 
     ui->tableView->setModel(m_model);
-    ui->tableView->hideColumn(0); // Hide ID
+    ui->tableView->hideColumn(0);
     ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);
     ui->tableView->horizontalHeader()->setStretchLastSection(true);
