@@ -20,7 +20,7 @@ private slots:
     void onReplyFinished(QNetworkReply *reply);
 
 private:
-    QNetworkAccessManager *m_manager;//11
+    QNetworkAccessManager *m_manager;
 };
 
 #endif // NETWORKMANAGER_H

@@ -32,7 +32,7 @@ private slots:
     void exportReport(); // Renamed
     void onFilterChanged();
     void onReminderTriggered(const QString &title, const QString &deadline); // New
-    void onNetworkStatus(const QString &status); // New
+    void onNetworkStatus(const QString &status);
     void checkCloudSync(); // New
 
 private:

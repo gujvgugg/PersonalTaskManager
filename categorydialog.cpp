@@ -13,7 +13,7 @@ CategoryDialog::CategoryDialog(QWidget *parent) :
     m_model = new QSqlTableModel(this, DataManager::instance().getDatabase());
     m_model->setTable("categories");
     m_model->setHeaderData(0, Qt::Horizontal, tr("ID"));
-    m_model->setHeaderData(1, Qt::Horizontal, tr("分类名称"));
+    m_model->setHeaderData(1, Qt::Horizontal, tr("分类名称"));//22
     m_model->select();
 
     ui->tableView->setModel(m_model);
