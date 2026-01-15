@@ -30,7 +30,7 @@ void ReminderWorker::stopWork()
 
 void ReminderWorker::checkReminders()
 {
-    // Create a thread-specific connection
+
     QString connectionName = QString("ReminderConnection_%1").arg((quintptr)QThread::currentThreadId());
     {
         QSqlDatabase db;
